@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Uhno</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <div class="page-wrapper">
+  <div class="logo">uno</div>
+
+  <button class="hamburger" onclick="toggleMenu()">☰</button>
+
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="facts.html">Fun Facts</a>
+    <a href="connections.html">Friends</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="center-box">
+    <h1 class="typing-text">Hi!, My name is Uhno</h1>
+    <p class="intro fade-in">I’m a mostly self taught programmer💻</p>
+    <img src="image.png" alt="Uhno's Picture" class="profile-pic fade-in" />
+  </div>
+<footer>Designed by LAGDA, KHENRICK UHNO - BSCS-22</footer>
+  </div>
+  <script>
+    function toggleMenu() {
+      document.querySelector('.navbar').classList.toggle('show');
+    }
+  </script>
+</body>
+</html>
+

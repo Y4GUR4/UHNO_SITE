@@ -1,0 +1,148 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background: linear-gradient(135deg, #ffe0f0, #fad0c4);
+  background-image: url(mario1.gif);
+  background-size: cover;
+
+}
+
+.page-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-top: 80px;
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  font-size: 1.8em;
+  font-weight: bold;
+  background: #ffc4e1;
+  color: #ff69b4;
+  padding: 10px 20px;
+  border-radius: 25px;
+  box-shadow: 0 4px 10px #ff69b433;
+
+}
+.navbar {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  background: #ffc4e1;
+  padding: 10px 20px;
+  border-radius: 25px;
+  box-shadow: 0 4px 10px #ff69b433;
+}
+
+
+.navbar a {
+  text-decoration: none;
+  margin: 0 10px;
+  color: #b83280;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+  color: white;
+  background-color: #ff69b4;
+  padding: 5px 12px;
+  border-radius: 15px;
+}
+
+.center-box {
+  text-align: center;
+  background-color: #ffffffcc;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px #0000001a;
+  margin: auto;
+  max-width: 90%;
+  width: 500px;
+}
+footer {
+  background-color: #ffc4e1;
+  color: #b83280;
+  padding: 12px;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 -2px 10px #ff69b433;
+  margin-top: auto;
+}
+.center-box:hover {
+  box-shadow: 0 0 25px 5px #ff69b4;
+}
+.about-boxes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+
+.about-box {
+  background: #ffe6f0;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(255, 105, 180, 0.2);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.about-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px 5px #ff69b4;
+}
+
+.about-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-box p {
+  font-weight: bold;
+  color: #cc2e74;
+}
+.hamburger {
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 1.8em;
+  background: none;
+  border: none;
+  color: #b83280;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 30px;
+    background: #ffc4e1;
+    border-radius: 15px;
+    padding: 10px;
+  }
+
+  .navbar.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
